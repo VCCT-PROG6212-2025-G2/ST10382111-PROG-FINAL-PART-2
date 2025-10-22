@@ -1,0 +1,149 @@
+/* === GENERAL STYLES === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h4 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* === NAVBAR === */
+.navbar {
+    background-color: #003366 !important;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: #ffcc00 !important;
+    }
+
+/* === FOOTER === */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* === HOME PAGE === */
+.home-container {
+    padding: 60px 20px;
+    background-color: #f5f9ff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+    .home-container h1 {
+        color: navy;
+        font-weight: 700;
+    }
+
+    .home-container p {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+.home-buttons .btn {
+    min-width: 200px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* === CLAIM FORM === */
+.claim-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group, .mb-3 {
+    margin-bottom: 15px;
+}
+
+/* === TABLES === */
+.table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table th {
+        background-color: #e6f2ff;
+        color: #003366;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+
+/* === BUTTONS === */
+.btn-primary {
+    background-color: #0055a5;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+}
+
+    .btn-primary:hover {
+        background-color: #003366;
+    }
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* === STATUS LABELS === */
+.status-label, .badge {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+}
+
+.pending {
+    background-color: orange;
+}
+
+.verified {
+    background-color: blue;
+}
+
+.approved {
+    background-color: green;
+}
+
+.rejected {
+    background-color: red;
+}

@@ -1,0 +1,48 @@
+﻿@model List<CMCS.Models.Claim>
+
+@{
+    ViewData["Title"] = "Track My Claims";
+}
+
+<h2>My Submitted Claims</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Lecturer</th>
+            <th>Hours</th>
+            <th>Rate</th>
+            <th>Notes</th>
+            <th>Document</th>
+            <th>Status</th>
+            <th>Submitted</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.LecturerName</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.HourlyRate</td>
+                <td>@claim.Notes</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(claim.DocumentName))
+                    {
+                        <a href="~/uploads/@claim.DocumentName" target="_blank">@claim.DocumentName</a>
+                    }
+                    else
+                    {
+                        <span>No document</span>
+                    }
+                </td>
+                <td>
+                    <span class="status-label @claim.Status.ToString().ToLower()">
+                        @claim.Status
+                    </span>
+                </td>
+                <td>@claim.SubmittedAt.ToString("yyyy-MM-dd HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>

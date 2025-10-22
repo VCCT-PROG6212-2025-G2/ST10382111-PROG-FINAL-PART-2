@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Welcome to CMCS";
+}
+
+<div class="home-container text-center">
+    <h1 class="display-4">Welcome to the Contract Monthly Claim System (CMCS)</h1>
+    <p class="lead">Streamline your monthly claim submissions and approvals with ease.</p>
+
+    <div class="home-buttons mt-4">
+        <a class="btn btn-primary btn-lg m-2" asp-controller="Claims" asp-action="Submit">Submit Claim</a>
+        <a class="btn btn-outline-primary btn-lg m-2" asp-controller="Claims" asp-action="Track">Track Claims</a>
+        <a class="btn btn-success btn-lg m-2" asp-controller="Coordinator" asp-action="Index">Coordinator View</a>
+        <a class="btn btn-info btn-lg m-2" asp-controller="Manager" asp-action="Index">Manager View</a>
+    </div>
+</div>
